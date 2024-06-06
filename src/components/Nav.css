@@ -1,0 +1,55 @@
+    .fixed {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(40, 40, 48, 0.91);
+        z-index: 10;
+        backdrop-filter: blur(8px);
+    }
+
+    .fixed ul.model {
+        width: 85%;
+        margin: auto;
+        margin-top: 2rem;
+        border-radius: 1rem;
+        background-color: black;
+        padding: 20px 20px 10px;
+        position: relative;
+        animation: move .6s;
+    }
+
+    .fixed ul.model li {
+        padding: 10px;
+    }
+
+    .fixed ul.model li a {
+        color: white;
+        opacity: .9;
+        font-size: .88rem;
+        font-weight: 500;
+        transition: .3s;
+    }
+
+    .fixed ul.model .close {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        font-weight: bold;
+        color: white;
+        transition: .3s;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    .fixed ul.model .close:hover {
+        transform: rotate(180deg);
+        color: rgb(240, 86, 48);
+    }
+
+    .fixed ul.model li:not(:last-of-type) {
+        border-bottom: 1px solid #666;
+    }
